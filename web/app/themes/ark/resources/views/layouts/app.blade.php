@@ -12,8 +12,7 @@
 
 <body @php(body_class())>
     @php(wp_body_open())
-
-    <div id="app">
+    <div id="app" x-data='isMobile()' x-init="checkIsMobile" @resize.window="checkIsMobile()">
         <a class="sr-only focus:not-sr-only" href="#main">
             {{ __('Skip to content') }}
         </a>
@@ -24,17 +23,25 @@
             @yield('content')
         </main>
 
-        @hasSection('sidebar')
-            <aside class="sidebar">
-                @yield('sidebar')
-            </aside>
-        @endif
-
         @include('sections.footer')
     </div>
 
     @php(do_action('get_footer'))
     @php(wp_footer())
+
+
+
+    <script>
+        function isMobile() {
+            return {
+                isMobile: false,
+                checkIsMobile() {
+                    this.isMobile = window.innerWidth <= 1024;
+                    console.log(this.isMobile)
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

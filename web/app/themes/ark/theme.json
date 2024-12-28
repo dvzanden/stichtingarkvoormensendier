@@ -1249,6 +1249,26 @@
           "color": "#4c0519",
           "name": "Rose 950",
           "slug": "rose-950"
+        },
+        {
+          "color": "#f1b0b1",
+          "name": "Primary Lighter",
+          "slug": "primary-lighter"
+        },
+        {
+          "color": "#a83031",
+          "name": "Primary DEFAULT",
+          "slug": "primary-default"
+        },
+        {
+          "color": "#3e1111",
+          "name": "Primary Darker",
+          "slug": "primary-darker"
+        },
+        {
+          "color": "#707070",
+          "name": "Grey",
+          "slug": "grey"
         }
       ]
     },
@@ -1287,9 +1307,69 @@
           "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
           "name": "Ui-monospace",
           "slug": "mono"
+        },
+        {
+          "fontFamily": "Playfair Display,serif",
+          "name": "Playfair Display",
+          "slug": "title"
+        },
+        {
+          "fontFamily": "Open Sans,sans-serif",
+          "name": "Open Sans",
+          "slug": "body"
         }
       ],
       "fontSizes": [
+        {
+          "name": "8",
+          "size": "0.5rem",
+          "slug": "8"
+        },
+        {
+          "name": "11",
+          "size": "0.6875rem",
+          "slug": "11"
+        },
+        {
+          "name": "12",
+          "size": "0.75rem",
+          "slug": "12"
+        },
+        {
+          "name": "14",
+          "size": "0.875rem",
+          "slug": "14"
+        },
+        {
+          "name": "16",
+          "size": "1rem",
+          "slug": "16"
+        },
+        {
+          "name": "18",
+          "size": "1.125rem",
+          "slug": "18"
+        },
+        {
+          "name": "40",
+          "size": "2.5rem",
+          "slug": "40"
+        },
+        {
+          "name": "48",
+          "size": "3rem",
+          "slug": "48"
+        },
+        {
+          "name": "56",
+          "size": "3.5rem",
+          "slug": "56"
+        },
+        {
+          "name": "64",
+          "size": "4rem",
+          "slug": "64"
+        },
         {
           "name": "xs",
           "size": "0.75rem",

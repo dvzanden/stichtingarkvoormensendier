@@ -63,3 +63,43 @@ collect(['setup', 'filters'])
             );
         }
     });
+
+// remove menus in admin
+function remove_menu()
+{
+    remove_menu_page('edit-comments.php');
+    remove_menu_page('edit.php');
+    remove_submenu_page('themes.php', 'nav-menus.php');
+
+}
+add_action('admin_menu', 'remove_menu');
+
+add_filter('rest_prepare_attachment', function ($response, $attachment, $request) {
+    // Allow public access to media files
+    if (! is_user_logged_in()) {
+        $response->data['media_url'] = wp_get_attachment_url($attachment->ID);
+    }
+    return $response;
+}, 10, 3);
+
+// add svg support
+function add_file_types_to_uploads($file_types)
+{
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes);
+    return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+// Block Support
+add_filter(
+    "allowed_block_types_all",
+    function () {
+        return [
+            "acf/test",
+        ];
+    },
+    10,
+    2
+);

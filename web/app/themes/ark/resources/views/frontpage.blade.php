@@ -1,8 +1,8 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Frontpage
 --}}
 
 @extends('layouts.app')
-
 @section('content')
+    FP
 @endsection
