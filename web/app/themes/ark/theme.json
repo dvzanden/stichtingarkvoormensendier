@@ -1314,8 +1314,8 @@
           "slug": "title"
         },
         {
-          "fontFamily": "Open Sans,sans-serif",
-          "name": "Open Sans",
+          "fontFamily": "Poppins,serif",
+          "name": "Poppins",
           "slug": "body"
         }
       ],

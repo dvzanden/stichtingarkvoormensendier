@@ -4,17 +4,16 @@ module.exports = {
   content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
     screens: {
-      sm: '375px',
+      sm: '450px',
       md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1920px',
+      lg: '1524px',
+      xl: '2300px',
     },
     container: {
       center: true,
       padding: {
         DEFAULT: '1rem',
-        sm: '36px',
+        sm: '15px',
         md: '10%',
         lg: '10%',
         xl: '13%',
@@ -50,7 +49,7 @@ module.exports = {
       },
       fontFamily: {
         title: ['Playfair Display', 'serif'],
-        body: ['Open Sans', 'sans-serif'],
+        body: ['Poppins', 'serif'],
       },
       fontSize: {
         8: ['0.5rem'],
